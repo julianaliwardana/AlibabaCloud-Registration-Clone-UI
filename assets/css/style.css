@@ -1,0 +1,387 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    font-family: Roboto, Helvetica, Tahoma, Arial, sans-serif, SimSun;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+main {
+    height: 800px;
+}
+
+/* NAVBAR */
+header {
+    background: rgba(44, 48, 52, 0.95);
+    height: 65px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    position: relative;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    float: right;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li.menu-drop:hover {
+    background: black;
+    margin: 0;
+    transition: all 0.3s;
+}
+
+.navbar ul li.menu a {
+    height: auto;
+    width: auto;
+    padding: 25px 15px 25px 20px;
+    display: block;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar ul li.menu a:hover,
+.navbar ul li a span:hover {
+    cursor: pointer;
+    color: #00c1de !important;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.navbar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    top: 95%;
+    background-color: black;
+}
+
+.navbar ul li:hover .dropdown-menu ul {
+    display: block;
+}
+
+.navbar ul li:hover .dropdown-menu ul li {
+    width: 220px;
+    padding-right: 20px;
+}
+
+/* Title */
+.title {
+    height: 150px;
+    background: url(img/title.png) no-repeat;
+    background-size: cover;
+    background-position: right;
+    color: black;
+    text-align: center;
+    padding: 30px;
+}
+
+.title h2 {
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.title p {
+    font-size: 16px;
+    padding-top: 8px;
+}
+
+/* Form */
+.content {
+    margin: 0 auto;
+    /* width: auto; */
+}
+
+.content .form {
+    position: relative;
+    margin: 0 auto;
+    /* margin-right: 30px; */
+    margin-top: 40px;
+    display: block;
+    width: 655px;
+    padding: 16px 10px 30px 10px;
+    border-top: 3px solid #ff8a00;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 15%);
+}
+
+.content .form-control p {
+    padding-top: 8px;
+    font-size: 13px;
+}
+
+.content .form-control p i.bx-info-circle {
+    font-size: 16px;
+}
+
+select,
+input[type="text"],
+input[type="password"] {
+    height: 42px;
+    width: 515px;
+    padding-left: 10px;
+    font-size: 14px;
+    border: 0.1px double #d5d5d5;
+    color: #d5d5d5;
+}
+
+select {
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image: linear-gradient(45deg, transparent 50%, black 50%),
+        linear-gradient(135deg, black 50%, transparent 50%);
+    background-position: calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px), 100% 0;
+    background-size: 6px 5.8px, 6px 6px, 3em 3em;
+    background-repeat: no-repeat;
+}
+
+select:hover {
+    background-image: linear-gradient(45deg, transparent 50%, #ff8a00 50%),
+        linear-gradient(135deg, #ff8a00 50%, transparent 50%);
+    background-position: calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px), 100% 0;
+    background-size: 6px 5.8px, 6px 6px, 3em 3em;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.content .form p.info-country {
+    color: #ff8a00;
+}
+
+.form-control#divEmail,
+.form-control#divSelect {
+    padding-top: 24px;
+}
+
+.form-control#divEmail,
+.form-control#divSelect,
+.form-control#divPassword,
+.form-control#divPassword2,
+.check {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.form-control#divPassword,
+.form-control#divPassword2,
+.check {
+    padding-top: 12px;
+}
+
+.form-control {
+    position: relative;
+}
+
+.content .form-control i.check {
+    visibility: hidden;
+    font-size: 20px;
+    position: absolute;
+    left: 485px;
+    bottom: 45px;
+}
+
+.content .form-control i.check1 {
+    bottom: 30px;
+}
+
+.content .form-control i.check2 {
+    bottom: 30px;
+}
+
+.content .form-control i.check3 {
+    bottom: 30px;
+}
+
+.content .form small {
+    visibility: hidden;
+}
+
+.form-control.success input {
+    color: black;
+    border-color: #2ecc71;
+}
+
+.form-control.success i.check.bxs-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error input {
+    border-color: red;
+}
+
+.form-control.error i.check1.bxs-x-circle {
+    bottom: 45px;
+    color: red;
+    visibility: visible;
+}
+
+.form-control.error i.check2.bxs-x-circle {
+    bottom: 40px;
+    color: red;
+    visibility: visible;
+}
+
+.form-control.error i.check3.bxs-x-circle {
+    bottom: 55px;
+    color: red;
+    visibility: visible;
+}
+
+.form-control.error,
+.form-control.error small {
+    height: 100px;
+    color: red;
+    visibility: visible;
+}
+
+.form-control.error#divPassword {
+    height: 85px;
+}
+
+label {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+label a {
+    text-decoration: none;
+    color: #ff8a00;
+}
+
+label a:hover {
+    text-decoration: underline;
+}
+
+.check {
+    margin-right: 0px;
+    width: 635px;
+}
+
+.checkbox {
+    display: flex;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    margin-top: 2px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.content .form .submit,
+.content .form .submit p {
+    text-align: center;
+    padding-top: 24px;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    background: #d5d5d5;
+    color: #fff;
+}
+
+.content .form .submit button {
+    color: white;
+    border: none;
+    font-size: 16px;
+    width: 515px;
+    height: 40px;
+}
+
+.content .form .submit button:enabled {
+    background-color: #ff8a00;
+    cursor: pointer;
+}
+
+.content .form .submit p span {
+    color: #ff8a00;
+}
+
+.submit p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.submit p a {
+    text-decoration: none;
+    color: #ff8a00;
+}
+
+.sidebar {
+    position: absolute;
+    width: 250px;
+    right: 150px;
+    top: 260px;
+    font-size: 12px;
+}
+
+footer {
+    position: relative;
+    color: #ffffffb0;
+    margin-top: 40px;
+    padding: 25px 170px;
+    background: #4b5054;
+    height: 150px;
+}
+
+footer a {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+footer .about-us,
+footer .links {
+    padding-bottom: 10px;
+    transition: all 0.3s;
+}
+
+footer .about-us a {
+    padding-bottom: 10px;
+    color: white;
+    margin-right: 45px;
+    transition: all 0.2s;
+}
+
+footer .about-us a:hover,
+footer .links a:hover {
+    color: #00c1de !important;
+}
+
+footer .links a {
+    color: #ffffffb0;
+    margin-right: 5px;
+    transition: all 0.2s;
+}

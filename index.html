@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Account</title>
+
+    <!-- Icon Document -->
+    <link rel="icon" href="assets/css/img/icon.PNG">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- BoxIcon -->
+    <link href='https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="https://www.alibabacloud.com/?spm=a2c45.11132027.8219174750.1.db147fecyHzyVw" class="logo">
+            <img src="https://img.alicdn.com/imgextra/i1/O1CN01TkhOMd216HORYLL6D_!!6000000006935-2-tps-346-140.png"
+                height="60" alt="Alibaba Cloud">
+        </a>
+        <ul class="navMenu">
+            <li class="menu menu-drop"><a href="#"><i class='bx bx-world'></i> intl - English <i
+                        class='bx bx-chevron-down'></i></a>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li class="sub-menu"><a href="#">International <span>&nbsp; &nbsp; English</span></a>
+                        </li>
+                        <li><a
+                                href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>China</span></a>
+                        </li>
+                        <li><a
+                                href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Deutch</span></a>
+                        </li>
+                        <li><a
+                                href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Francis</span></a>
+                        </li>
+                        <li><a
+                                href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Japanese</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu"><a
+                    href="https://www.alibabacloud.com/?spm=a2c45.11132027.8219174750.11.db147fectEuTLZ">Homepage</a>
+            </li>
+            </li>
+            <li class="menu"><a
+                    href="https://account.alibabacloud.com/login/login.htm?spm=a2c45.11132027.8219174750.12.db147fecOcyAp2&oauth_callback=https://www.alibabacloud.com/">Login</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div class="title">
+            <h2>Create Your Alibaba Cloud Account</h2>
+            <p>Free Access to Over 50 Products and Up to 12
+                Months Usage for Elastic Compute Service!</p>
+        </div>
+        <div class="content">
+            <form action="" class="form" id="form" onSubmit="validateCheckBox()">
+                <div class="form-control" id="divSelect">
+                    <select name="countries" id="countries">
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="Japannese">Japannese</option>
+                        <option value="united States">United States of America</option>
+                        <option value="England">England</option>
+                        <option value="France">France</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Siberia">Siberia</option>
+                        <option value="Kanada">Kanada</option>
+                        <option value="Rusia">Rusia</option>
+                    </select>
+                    <p class="info-country">
+                        <i class='bx bx-info-circle'></i> Country/region will be used for currency and tax
+                        purposes and cannot be changed <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; after
+                        registration.
+                    </p>
+                </div>
+
+                <div class="form-control" id="divEmail">
+                    <input type="text" id="email" name="email" placeholder="Enter your Email"
+                        onfocusout="validateEmail()">
+                    <i class='check check1 bx bxs-check-circle'></i>
+                    <i class='check check1 bx bxs-x-circle'></i>
+                    <small>Error Message</small>
+                </div>
+
+                <div class="form-control" id="divPassword">
+                    <input type="password" id="password" name="password" placeholder="Enter your password"
+                        onfocusout="validatePassword()">
+                    <i class='check check2 bx bxs-check-circle'></i>
+                    <i class='check check2 bx bxs-x-circle'></i>
+                    <small>Error Message</small>
+                </div>
+
+                <div class="form-control" id="divPassword2">
+                    <input type="password" id="confirm-password" name="confirm-password"
+                        placeholder="Confirm your password" onfocusout="validatePassword2()">
+                    <i class='check check3 bx bxs-check-circle'></i>
+                    <i class='check check3 bx bxs-x-circle'></i>
+                    <small>Error Message</small>
+                </div>
+
+                <div class="check checkbox">
+                    <input type="checkbox" id="verify" name="verify">
+                    <label for="verify"> I hereby agree to the Alibaba Cloud International Website
+                        <a href="https://www.alibabacloud.com/help/faq-detail/42427.htm?spm=a2145.520000001.0.0.611452cbos9sfP"
+                            target="_blank">Membership
+                            Agreement</a>, <a
+                            href="https://www.alibabacloud.com/help/faq-detail/42425.htm?spm=a2145.520000001.0.0.611452cbos9sfP"
+                            target="_blank">Privacy Policy</a>(available in other
+                        <a href="https://www.alibabacloud.com/help/faq-list/42388.htm?spm=a2145.520000001.0.0.611452cbos9sfP"
+                            target="_blank">languages</a>),
+                        <a href="https://www.alibabacloud.com/help/doc-detail/42416.htm" target="_blank">Product
+                            Terms</a>
+                        and <a
+                            href="https://www.alibabacloud.com/help/faq-detail/42417.htm?spm=a2145.520000001.0.0.611452cbos9sfP"
+                            target="_blank">Terms of Use</a>, under which I am contracting with
+                        Alibaba Cloud US
+                        LLC.</label>
+                </div>
+
+                <div class="submit">
+                    <button id="confirmBtn" disabled="disabled">Confirm</button>
+
+                    <p>Already a member? <a
+                            href="https://account.alibabacloud.com/login/login.htm?spm=a2145.520000001.0.0.611452cbos9sfP"
+                            target="_blank">Sign
+                            In</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="sidebar">
+            <h3 style="font-size: 16px; margin-bottom:20px;">Account Benefits
+                Registration Tips</h3>
+            <div class="category">
+                <h4></h4>
+
+                <h5 style="font-size: 12.5px; margin-bottom: 10px;">Free Trial</h5>
+                <p style="font-size: 12.5px; margin-bottom: 15px; line-height: 1.5; color: #73777a;">Get free hands-on
+                    experience with 50+
+                    products. Now upw
+                    to 12 Months for
+                    Elastic Compute Service!</p>
+
+                <h5 style="font-size: 12.5px; margin-bottom: 10px;">Premium Support Services</h5>
+                <p style="font-size: 12.5px; margin-bottom: 15px; line-height: 1.5; color: #73777a;"><span
+                        style="color:#ff8a00; font-weight: bold;">1-on-1
+                        pre-sale
+                        consultation</span>, 24/7
+                    after-sales technical support with
+                    6 free tickets per
+                    quarter</p>
+
+                <h5 style="font-size: 12.5px; margin-bottom: 10px;">How do I select the country or region of my account?
+                </h5>
+                <p style="font-size: 12.5px; margin-bottom: 15px; line-height: 1.5; color: #73777a;">For enterprise
+                    customers, please
+                    select the account
+                    registration
+                    country/region based on your
+                    business license. If not, you may be unable to obtain the correct invoice for tax deduction, and
+                    may
+                    not be eligible for your local tax free policy, or may even be unable to pay for the invoice.
+                </p>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="about-us">
+                <a href="https://www.alibabacloud.com/about?spm=a2c45.11132027.4931930050.1.db147fecJpf0sO"
+                    target="_self">About Us</a>
+                <a href="https://www.alibabacloud.com/help/faq-detail/42425.htm" target="_self">Privacy Policy</a>
+                <a href="https://www.alibabacloud.com/help/product/42384.htm?spm=a2c45.11132027.4931930050.3.db147fecOc1nog"
+                    target="_self">Legal</a>
+                <a href="https://www.alibabacloud.com/notice?spm=a2c45.11132027.4931930050.4.db147fecoefiDg"
+                    target="_self">Notice List</a>
+            </div>
+
+            <div class="links">
+                <a href="https://www.alibabagroup.com/en/global/home?spm=a2c45.11132027.4931930050.5.db147fecyHzyVw"
+                    target="_self">Alibaba Group</a>
+                <a href="https://world.taobao.com/?spm=a2c45.11132027.4931930050.6.db147fecyHzyVw"
+                    target="_blank">Taobao Marketplace</a>
+                <a href="https://www.tmall.com/?spm=a2c45.11132027.4931930050.7.db147fecyHzyVw"
+                    target="_blank">Tmall</a>
+                <a href="https://pages.tmall.com/wow/a/act/ju/dailygroup/2199/wupr?wh_pid=daily-222239&bid=3&spm=a2c45.11132027.4931930050.8.db147fecyHzyVw"
+                    target="_blank">Juhuasuan</a>
+                <a href="https://www.aliexpress.com/?spm=a2c45.11132027.4931930050.9.db147fecyHzyVw"
+                    target="_blank">AliExpress</a>
+                <a href="https://www.alibaba.com/?spm=a2c45.11132027.4931930050.10.db147fecyHzyVw&from_http=1"
+                    target="_blank">Alibaba.com</a>
+                <a href="https://www.1688.com/?spm=a2c45.11132027.4931930050.11.db147fecyHzyVw" target="_blank">1688</a>
+                <a href="https://www.alimama.com/index.htm?spm=a2c45.11132027.4931930050.12.db147fecyHzyVw"
+                    target="_blank">Alimama</a>
+                <a href="https://www.fliggy.com/?spm=a2c45.11132027.4931930050.13.db147fecyHzyVw"
+                    target="_blank">Alitrip</a>
+                <a href="https://www.yunos.com/?spm=a2c45.11132027.4931930050.14.db147fecyHzyVw"
+                    target="_blank">YunOS</a>
+                <a href="https://aliqin.tmall.com/?spm=a2c45.11132027.4931930050.15.db147fecyHzyVw"
+                    target="_blank">AliTelecom</a>
+                <a href="https://mobile.amap.com/?spm=a2c45.11132027.4931930050.16.db147fecyHzyVw"
+                    target="_blank">AutoNavi</a>
+                <a href="http://www.ucweb.com/?spm=a2c45.11132027.4931930050.17.db147fecyHzyVw"
+                    target="_blank">UCWeb</a>
+                <a href="https://www.umeng.com/?spm=a2c45.11132027.4931930050.18.db147fecyHzyVw"
+                    target="_blank">Umeng</a>
+                <a href="https://www.xiami.com/?spm=a2c45.11132027.4931930050.19.db147fecyHzyVw"
+                    target="_blank">Xiami</a>
+                <a href="https://www.dingtalk.com/en" target="_blank">DingTalk</a>
+                <a href="https://www.alipay.com/" target="_blank">Alipay</a>
+            </div>
+
+            <div class="copyright">© 2009-2021 Copyright
+                by Alibaba Cloud All rights reserved</div>
+        </div>
+    </footer>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
